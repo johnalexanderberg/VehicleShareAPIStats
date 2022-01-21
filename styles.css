@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+
+:root {
+    --color-primary: #c6c4ff;
+    --color-primary-lighter: #e6e5ff;
+}
+*{
+    font-family: 'Dongle', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html, button{
+    font-size: 16px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: 1.5rem;
+}
+
+nav{
+
+    background-color: aliceblue;
+    height: 100vh;
+}
+
+/* SVGs */
+rect{
+    fill: var(--color-primary);
+}
+
+rect:hover{
+    fill: var(--color-primary-lighter);
+}
+
+/* Navigation */
+
+.nav_controls {
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    background-color: antiquewhite;
+    display: block;
+}
+
+.labelContainer{
+    position: absolute;
+left: 10px;
+}
+.section{
+    display: flex;
+    justify-content: center;
+}
+
+.dataLabel{
+    position: absolute;
+    display: inline-block;
+}
+
+button {
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: var(--color-primary);
+    padding: 0.5rem;
+    border: none;
+    transition: 0.1s;
+}
+button:hover {
+    background-color: var(--color-primary-lighter);
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+.svg_container{
+    display: flex;
+    justify-content: center;
+}
