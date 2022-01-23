@@ -15,24 +15,27 @@ console.log(section);
 //         + vehicleCount + " " + (vehicleCount < 1 ? "vehicle " : "vehicles ") + "since " + firstBooking + " and completed " + bookingCount +" rides";
 // }
 
-
-
 //select Today Svg
 const svgWidth = 600;
 const svgHeight = 200;
-const rectOffset = 5;
+const rectOffset = 1;
 const data1 = [123, 245, 532, 3, 56, 654, 43, 36, 65, 34, 56, 234, 455, 65, 45, 465, 45, 23, 64, 34];
+const vehiclesData = [123, 245, 532, 3, 56, 654, 43, 36];
 
 
 const todaySvgContainer = document.getElementById("todaySvg");
-const todaySvg = createSvg(svgWidth, svgHeight, rectOffset, data1, todaySvgContainer)
+createSvg(svgWidth, svgHeight, rectOffset, data1, todaySvgContainer)
+
+const vehiclesSvgContainer = document.getElementById("vehiclesSvg");
+createSvg(svgWidth, svgHeight, rectOffset, vehiclesData, vehiclesSvgContainer)
 
 
 const todaySvgLabels = document.createElement("div");
+
+
 todaySvgLabels.classList.add("todaySvgLabels");
 todaySvgContainer.append(todaySvgLabels);
 
-console.log(todaySvg)
 
 
 
