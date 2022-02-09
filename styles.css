@@ -22,11 +22,28 @@ body {
     font-size: 1.5rem;
 }
 
+#popup{
+    font-size: 2rem;
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
 nav{
 
     background-color: aliceblue;
     min-width: 250px;
     height: 100%;
+}
+
+nav p{
+    margin: 18px;
 }
 
 /* SVGs */
@@ -45,8 +62,16 @@ rect:hover{
     flex-direction: column;
 }
 
-h1{
+h1, h2{
     text-align: center;
+}
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    margin: 0;
+    font-size: 2rem;
 }
 
 main{
@@ -64,8 +89,21 @@ section{
 }
 
 .dataLabel{
-    position: absolute;
+    position: relative;
     display: inline-block;
+}
+
+.labelName{
+    text-align: center;
+}
+
+.datalabel_container{
+    width: 600px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+
 }
 
 .dataVis{

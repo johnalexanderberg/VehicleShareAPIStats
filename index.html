@@ -8,11 +8,12 @@
 </head>
 <body>
 
-
+<p id="popup" class="hidden"></p>
 
 <nav>
     <h1>Vehicle Share Stats</h1>
     <div class="nav_controls">
+        <p id="todayText"></p>
         <button>Today</button>
         <button>Last 28 Days</button>
         <button>All Time</button>
@@ -20,22 +21,17 @@
 </nav>
 
 <main>
-    <h1>Today</h1>
-    <p>Today, 245 users have completed 93 rides on 30 shared vehicles.</p>
-    <p>The most used vehicle type among our users today was Car.</p>
+    <h1>Today's Stats:</h1>
 
-        <h1>Busiest Hours</h1>
+        <h2>Busiest Hours</h2>
         <section>
             <div class="datavis" id="todaySvg"></div>
         </section>
 
-    <h1>Vehicles</h1>
+    <h2>Vehicles</h2>
     <section>
-        <div class="datavis" id="vehiclesSvg"></div>
-    </section>
-    <h1>Vehicles</h1>
-    <section>
-        <div class="datavis" id="vehiclesSvg"></div>
+        <div class="datavis" id="vehiclesSvg">
+        </div>
     </section>
 
 </main>
